@@ -1,6 +1,14 @@
 # instacash-app
 Test instacash-app
 
+## Instalation:
+```bash
+ npm install 
+ npm run compile
+ npm run gameunorun
+ npm run gamedostest
+```
+
 ## Game-01 :
 to run: 
 ```bash
