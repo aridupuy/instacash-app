@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gameunorun": "node game-01/index.ts",
-    "gameunotest": "node game01/test.ts",
-    "gamedostest": "node game-02/test.js",
+    "gameunorun": "node game-01/index.js",
+    "gameunotest": "node game-01/test.js",
+    "gamedostest": "node compile/test.js",
     "compile": "tsc "
   },
   "repository": {

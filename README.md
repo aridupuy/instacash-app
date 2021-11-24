@@ -4,20 +4,20 @@ Test instacash-app
 ## Game-01 :
 to run: 
 ```bash
- npm gameunorun
+ npm run gameunorun
 ```
 to test :
 ```bash
-  npm gameunotest
+  npm run gameunotest
 ```
 ## Game-02:
 to test:
 ```bash
-  npm gamedostest
+  npm run gamedostest
 ```
 to compile:
 ```bash
-  npm gamedoscompile
+  npm run compile
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
