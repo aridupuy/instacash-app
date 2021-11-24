@@ -11,13 +11,14 @@ to test :
   npm run gameunotest
 ```
 ## Game-02:
-to test:
-```bash
-  npm run gamedostest
-```
-to compile:
+Compile:
 ```bash
   npm run compile
 ```
+Test:
+```bash
+  npm run gamedostest
+```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
