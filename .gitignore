@@ -1,3 +1,5 @@
 ./node_modules/
 ./package-lock.json
 ./compile/
+./game-02/.node_modules/
+./game-01/.node_modules/
