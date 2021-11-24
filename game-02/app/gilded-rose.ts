@@ -1,11 +1,10 @@
-import { throws } from 'assert';
 import { itemFactory } from './classes/itemfactory';
 export class Item {
     name: string;
     sellIn: number;
     quality: number;
 
-    constructor(name, sellIn, quality) {
+    constructor(name:string, sellIn:number, quality:number) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;

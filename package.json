@@ -1,0 +1,25 @@
+{
+  "name": "instacash-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gameunorun": "node game-01/index.ts",
+    "gameunotest": "node game01/test.ts",
+    "gamedostest": "node game-02/test.js",
+    "compile": "tsc "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arieldupuy90/instacash-app.git"
+  },
+  "author": "ariel dupuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arieldupuy90/instacash-app/issues"
+  },
+  "homepage": "https://github.com/arieldupuy90/instacash-app#readme",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  }
+}

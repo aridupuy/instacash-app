@@ -4,8 +4,9 @@ import { ItemDefault } from './itemDefault';
 import { itemBackstage } from './itemBackstage';
 import { itemAgedBrie } from './itemAgedBrie';
 import { itemConjured } from './itemConjured';
+import { Item } from '../gilded-rose';
 export class itemFactory{
-    static factory(item):I_item{
+    static factory(item:Item):I_item{
         switch (item.name){
             case "Sulfuras, Hand of Ragnaros":
                 return new ItemSulfuras(item);
