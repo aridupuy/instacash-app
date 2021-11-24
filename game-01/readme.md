@@ -1,5 +1,3 @@
-para ejecutar el ejemplo "node index.js"
-o bien para probar la clase Game "npm test"
 
 # instacash-app
 Test instacash-app
@@ -19,3 +17,6 @@ to test :
 ```bash
   node test.js
 ```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
