@@ -1,29 +1,28 @@
 class Game {
-    game01(m, n) {
-        /*m=[2,5,8,14,0], n=10*/
-        /* ordeno numericamente de menor a mayor para luego quitar los repetidos mas facilmente.*/
+    game01(m,n){
         m.sort((actual,siguiente)=>{
             if(actual<siguiente){
-                return  -1;
+                return  1;
             }
             else{
-                return 1;
+                return -1;
             }
         });
-        /* achico el array sacando los valores superiores a n y posibles valores repetidos */
-        m=m.filter((element,index,array)=>element<=n && array[index-1]!=element);
-        for(let current of m){
-            /*voy sacando del array el valor actual asi se va haciendo mas corto*/
-            m=m.filter((element)=>element != current);
-            for(let a of m){
-                if(current+a==n){
-                    return [current,a];                
-                }
-            }
-        }
-        return [];
+        return this.essubconjuntosum(m,m.length,n,n);
     }
-
+    essubconjuntosum(arr,length,sum,buscado){
+        if(sum-arr[length]==0){
+            if(arr[length]==buscado-sum)
+                return false;
+            return [buscado-sum,arr[length]];
+        }
+        if(length==0 && sum!=0){
+            return false;
+        }
+        if (arr[length - 1] > sum)
+            return this.essubconjuntosum(arr, length- 1, sum,buscado); 
+        return this.essubconjuntosum(arr,length-1,sum,buscado) || this.essubconjuntosum(arr,length-1,sum-arr[length-1],buscado);
+    }
 }
 
 module.exports = Game;
